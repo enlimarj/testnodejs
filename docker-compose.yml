@@ -1,0 +1,80 @@
+
+version: '3'
+
+services:
+   db:
+     image: mysql:5.5
+    #restart: always
+     container_name: database
+     networks:
+      - netapp
+     volumes:
+       - db_data:/var/lib/mysql
+       - /home/edsinfo/compose/nodejs/database/scripts:/docker-entrypoint-initdb.d
+     environment:
+       MYSQL_ROOT_PASSWORD: Root@1001
+       MYSQL_USER: notes-api
+       MYSQL_PASSWORD: notes-api
+    # command: "cd /docker-entrypoint-initdb.d && mysql -u root -p Root@1001 notes < database_schema.sql;"
+
+   node:
+     image: node
+    #restart: always
+     container_name: appserver
+     networks:
+      - netapp
+     user: "node"
+     working_dir: /home/node/app
+     environment:
+      # - PORT=8080
+      # - DATABASE_HOST=database
+      # - DATABASE_PASSWORD=notes-api
+      # - EGG_SERVER_ENV=local
+       - NODE_ENV=production
+     volumes:
+       - /home/edsinfo/compose/nodejs/app:/home/node/app
+     expose:
+       - "8080" 
+     depends_on:
+       - db
+     command: "npm install restify && npm install restify-errors && npm install mysql"
+     command: "npm start"
+
+   web:
+     image: nginx
+    #restart: always
+     container_name: webserver
+     networks:
+      - netapp 
+     volumes:
+       - /home/edsinfo/compose/nodejs/web/default.conf:/etc/nginx/conf.d/default.conf:ro
+     ports:
+       - "80:80"
+     depends_on:
+       - node
+     environment:
+       - NGINX_HOST=localhost
+       - NGINX_PORT=80
+     command: "nginx -g 'daemon off;'"
+
+   php:
+     image:  phpmyadmin/phpmyadmin:4.7.0-1
+     container_name: phpmyadmin
+     networks:
+      - netapp
+     volumes:
+       - /etc/localtime:/etclocaltim:ro
+     environment:
+       - PMA_HOST=db
+     ports:
+       - "8010:80"
+     depends_on:
+       - db
+
+networks:
+  netapp:
+    external:
+      name: netapp
+
+volumes:
+    db_data:
