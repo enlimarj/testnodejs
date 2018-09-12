@@ -18,18 +18,17 @@ services:
     # command: "cd /docker-entrypoint-initdb.d && mysql -u root -p Root@1001 notes < database_schema.sql;"
 
    node:
+     build:
+       dockerfile: ./dockerfiles/app/Dockerfile
+       context: .
      image: node
-    #restart: always
+     restart: always
      container_name: appserver
      networks:
       - netapp
      user: "node"
      working_dir: /home/node/app
      environment:
-      # - PORT=8080
-      # - DATABASE_HOST=database
-      # - DATABASE_PASSWORD=notes-api
-      # - EGG_SERVER_ENV=local
        - NODE_ENV=production
      volumes:
        - /home/edsinfo/compose/nodejs/app:/home/node/app
@@ -37,7 +36,6 @@ services:
        - "8080" 
      depends_on:
        - db
-     command: "npm install restify && npm install restify-errors && npm install mysql"
      command: "npm start"
 
    web:
