@@ -3,19 +3,22 @@ version: '3'
 
 services:
    db:
+     build:
+       dockerfile: ./dockerfiles/database/Dockerfile
+       context: .
      image: mysql:5.5
-    #restart: always
+     restart: always
      container_name: database
      networks:
       - netapp
      volumes:
        - db_data:/var/lib/mysql
        - /home/edsinfo/compose/nodejs/database/scripts:/docker-entrypoint-initdb.d
+       - /etc/localtime:/etclocaltim:ro
      environment:
        MYSQL_ROOT_PASSWORD: Root@1001
        MYSQL_USER: notes-api
        MYSQL_PASSWORD: notes-api
-    # command: "cd /docker-entrypoint-initdb.d && mysql -u root -p Root@1001 notes < database_schema.sql;"
 
    node:
      build:
@@ -44,7 +47,7 @@ services:
        dockerfile: ./dockerfiles/web/Dockerfile
        context: .
      image: nginx
-    #restart: always
+     restart: always
      container_name: webserver
      networks:
       - netapp 
@@ -62,6 +65,7 @@ services:
 
    php:
      image:  phpmyadmin/phpmyadmin:4.7.0-1
+     restart: always
      container_name: phpmyadmin
      networks:
       - netapp
