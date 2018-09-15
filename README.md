@@ -4,26 +4,20 @@
 
 Instalar:
 - Docker Community Edition (CE) ou Enterprise Edition (EE)
-- Docker Compose 
+- Docker Compose
+
+Link: https://www.docker.com/products/docker-engine
 
 ## VERSÃO UTILIZADA
 
-Docker CE:
-Client:
- Version:           18.06.1-ce
- API version:       1.38
- Go version:        go1.10.3
- Git commit:        e68fc7a
- Built:             Tue Aug 21 17:25:03 2018
- OS/Arch:           linux/amd64
- Experimental:      false
+### Docker CE:
 
-Docker Compose:
+ Version: 18.06.1-ce
 
-docker-compose version 1.22.0, build f46880fe
-docker-py version: 3.4.1
-CPython version: 3.6.6
-OpenSSL version: OpenSSL 1.1.0f  25 May 2017
+### Docker Compose:
+
+Version 1.22.0, build f46880fe
+
 
 ## REQUISITOS PARA USO
 
