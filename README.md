@@ -39,23 +39,31 @@ docker volume create db_data
 ```
 docker-compose up -d
 ```
-- Checando logs
-
-```
-docker-compose logs -f
-```
-
-- Checando logs por serviço
-
-```
-docker-compose logs -f <nome do serviço>
-```
+<a href="http://tinypic.com?ref=2yu0f49" target="_blank"><img src="http://i68.tinypic.com/2yu0f49.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 - Checar serviços estão UP
 
 ```
 docker-compose ps
 ```
+
+<a href="http://tinypic.com?ref=16k7rma" target="_blank"><img src="http://i68.tinypic.com/16k7rma.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+- Checando logs
+
+```
+docker-compose logs -f
+```
+
+<a href="http://tinypic.com?ref=2iac4eh" target="_blank"><img src="http://i63.tinypic.com/2iac4eh.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+- Checando logs por serviço
+
+```
+docker-compose logs -f <nome do serviço>
+```
+<a href="http://tinypic.com?ref=14l0g8k" target="_blank"><img src="http://i65.tinypic.com/14l0g8k.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
 
 ## TESTAS SERVIÇOS
 
