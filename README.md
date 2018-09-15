@@ -82,12 +82,14 @@ Link: https://www.getpostman.com
 
 1 - Passo: Abra o aplicativo Postman
 
-2 - Selecione GET
+2 - Teste o GET
 
 <a href="http://tinypic.com?ref=2dkilpd" target="_blank"><img src="http://i65.tinypic.com/2dkilpd.jpg" border="0" alt="Image and video hosting by TinyPic"></a>
 
-3 - Selecione POST
+3 - Teste o POST
 
 <a href="http://tinypic.com?ref=2d6uzdc" target="_blank"><img src="http://i64.tinypic.com/2d6uzdc.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
+4 - Teste o DELETE
 
+<a href="http://tinypic.com?ref=29x8508" target="_blank"><img src="http://i66.tinypic.com/29x8508.png" border="0" alt="Image and video hosting by TinyPic"></a>
