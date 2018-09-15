@@ -16,8 +16,7 @@ Link: https://www.docker.com/products/docker-engine
 
 ### Docker Compose:
 
-Version 1.22.0, build f46880fe
-
+Version 1.22.0
 
 ## REQUISITOS PARA USO
 
@@ -70,6 +69,19 @@ Adiconar ao arquivo /etc/hosts a entrega com IP e hostname:
 
 192.168.56.102  node-api.local.com.br
 
-Neste caso o IP: 192.168.56.102 é o endereço atribuído a máquina virtual onde o Docker está rodando o Engine.
+Neste caso o IP: 192.168.56.102 é o endereço atribuído a máquina virtual onde o Docker está rodando o Engine
+### UTILIZADO O POSTMAN
+
+Utilizado o aplicativo da Google Chrome Apps Store.
+
+Link: https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related?hl=pt-BR
+
+O mesmo pode ser obtido no site oficial:
+
+Link: https://www.getpostman.com
+
+1 - Passo: Abra o aplicativo Postman
+
+
 
 
