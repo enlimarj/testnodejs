@@ -62,7 +62,7 @@ docker-compose logs -f
 ```
 docker-compose logs -f <nome do serviço>
 ```
-<a href="http://tinypic.com?ref=14l0g8k" target="_blank"><img src="http://i65.tinypic.com/14l0g8k.png" border="0" alt="Image and video hosting by TinyPic"></a>
+<a href="http://tinypic.com?ref=30xitmo" target="_blank"><img src="http://i63.tinypic.com/30xitmo.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 
 ## TESTAS SERVIÇOS
