@@ -1,5 +1,12 @@
 # INSTRUÇÕES PARA INSTALAÇÃO
 
+## COMPOSIÇÃO DA PILHA DE APLICAÇÕES
+
+- Webserver Nginx
+- Aplicação Node.JS
+- Banco de Dados Mysql
+- SGBD phpMyAdmin (Extra)
+
 ## REQUISITOS
 
 Instalar:
