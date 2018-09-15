@@ -5,7 +5,7 @@
 - Webserver Nginx
 - Aplicação Node.JS
 - Banco de Dados Mysql
-- SGBD phpMyAdmin (Extra)
+- Cliente SGBD phpMyAdmin (Extra)
 
 ## REQUISITOS
 
