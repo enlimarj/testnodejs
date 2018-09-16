@@ -97,7 +97,7 @@ Exemplo: 192.169.56.101:8010
 
 <a href="http://tinypic.com?ref=2v192xe" target="_blank"><img src="http://i67.tinypic.com/2v192xe.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
-## TESTAS SERVIÇOS
+## TESTE OS SERVIÇOS
 
 O NGINX responde na porta 80 como proxy reverso para o endereço nodeapi.com.br. O mesmo endereço deve ser adicionado ou seu DNS ou ao arquivo hosts do seu computador.
 
