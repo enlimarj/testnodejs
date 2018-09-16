@@ -71,6 +71,31 @@ docker-compose logs -f <nome do serviço>
 ```
 <a href="http://tinypic.com?ref=30xitmo" target="_blank"><img src="http://i63.tinypic.com/30xitmo.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
+## PÓS START DOS SERVIÇOS
+
+- Criar usuário no banco Mysql
+
+1 - Acesse o phpMyAdmin pelo endereço IP do seru host onde o Docker está sendo executado:
+
+Exemplo: 192.169.56.101:8010
+
+<a href="http://tinypic.com?ref=2yuh9jb" target="_blank"><img src="http://i67.tinypic.com/2yuh9jb.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+2 - Concedendo privilégios a conta note-api
+
+<a href="http://tinypic.com?ref=3585o4n" target="_blank"><img src="http://i67.tinypic.com/3585o4n.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+3 - Selecione o grants abaixo
+
+<a href="http://tinypic.com?ref=ejzwd1" target="_blank"><img src="http://i66.tinypic.com/ejzwd1.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+4 - Clique em Executar
+
+<a href="http://tinypic.com?ref=10gwuhu" target="_blank"><img src="http://i64.tinypic.com/10gwuhu.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+5 - Confirme os grants
+
+<a href="http://tinypic.com?ref=2v192xe" target="_blank"><img src="http://i67.tinypic.com/2v192xe.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 ## TESTAS SERVIÇOS
 
