@@ -73,7 +73,7 @@ docker-compose logs -f <nome do serviço>
 
 ## PÓS START DOS SERVIÇOS
 
-- Criar usuário no banco Mysql
+- Alterar privilégios do usuário "note-api"
 
 1 - Acesse o phpMyAdmin pelo endereço IP do seru host onde o Docker está sendo executado:
 
