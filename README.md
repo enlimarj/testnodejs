@@ -75,7 +75,7 @@ docker-compose logs -f <nome do serviço>
 
 - Alterar privilégios do usuário "note-api"
 
-1 - Acesse o phpMyAdmin pelo endereço IP do seru host onde o Docker está sendo executado:
+1 - Acesse o phpMyAdmin pelo endereço IP do seu host onde o Docker está sendo executado:
 
 Exemplo: 192.169.56.101:8010
 
